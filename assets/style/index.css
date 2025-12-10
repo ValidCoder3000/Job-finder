@@ -5,8 +5,13 @@ header {
     background-color: rgb(255, 255, 255);
 }
 
-.initial_container {
+body {
     background-color: #f0f0f0;
+}
+
+.initial_container {
+    /* background-color: #f0f0f0; */
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -38,13 +43,18 @@ a:hover {
 }
 
 .the_three_column_setup {
-    display: flex;          
-    gap: 20px;               
+    display: flex;  
+    flex-direction: row; 
+    align-items: flex-start;       
+    gap: 20px; 
+    margin-top: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;              
 }
 
 .column {
     flex: 1;                 
-    background-color: #f0f0f0;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     border: 1px solid #ccc;
     min-height: 200px; 
@@ -62,11 +72,45 @@ button {
     border: 1px solid #ccc;
 }
 
-.the_three_column_setup {
-    margin-top: 20px;
-    margin-inline-start: 20px;
-    margin-inline-end: 20px;
+.right-column {
+    flex: 1;              
+    /* background-color: transparent;     */
+    background-color: #ccc; 
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    min-height: 200px;  
+    border-radius: 5px;
+    /* margin-block-start: 20px;
+    margin-block-end: 20px;  */
+    /* margin-top: 200px;
+    margin-bottom: 200px; */
+
 }
+
+/* #right-column {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+} */
+
+#header_column {
+    background-color: green;
+    width: auto;
+    border-radius: 5px; 
+    padding: 20px;
+    font-size: 20px;
+    word-spacing: 10px;
+
+    /* letter-spacing: 5px; */
+}
+
+.content-column {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: brown;
+    padding: 10px;
+}
+
 /* i {
     background-color: black;
 } */
