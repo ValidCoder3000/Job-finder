@@ -27,3 +27,7 @@ margins, and other design elements.
 • Host your application on GitHub and provide a link to the repository.
 
 • Again, check the examples provided (and others) to create pages that look professional. 
+
+
+Gaps ==== 30px;
+Padding ==== 20px;
