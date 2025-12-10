@@ -3,6 +3,7 @@
 
 header {
     background-color: rgb(255, 255, 255);
+    /* padding: 10px; */
 }
 
 body {
@@ -16,18 +17,21 @@ body {
     flex-direction: row;
     gap: 20px;
     padding: 20px;
+    justify-content: space-between;
 }
 
-#initial_container {
+/* #initial_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+    padding: 10px;
+} */
 
 ul {
     display: flex;
     flex-direction: row;
     gap: 100px;
+    /* background-color: red; */
 }
 
 li {
@@ -117,9 +121,10 @@ button {
 
 .middle-column {
     flex: 1;                 
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border: 1px solid #ccc;
+    background-color: transparent;
+    /* background-color: rgb(255, 255, 255); */
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
     min-height: 200px; 
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -127,16 +132,99 @@ button {
 
 textarea {
     padding: 8px;
+    margin-bottom: 2px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 380px; 
+    width: 100%; 
     height: 60px;
     font-size: 16px;
     resize: none;
 }
 
+.text-container {
+    margin-bottom: 30px;
+    background-color: transparent;
+}
 
+.text-buttons {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
 
+.fakebook-resource {
+    /* background-color: rgb(255, 255, 255); */
+    background-color: transparent;
+    /* background-color: red; */
+
+}
+
+#fakebook-resource {
+    background-color: rgb(255, 255, 255);
+    /* background-color: transparent; */
+}
+
+.left-column {
+    flex: 1;                 
+    /* background-color: rgb(255, 255, 255); */
+    background-color: transparent;
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    min-height: 200px; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 2px;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.random-numbers {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-bottom: 2px;
+    /* justify-content: space-around; */
+    #random-number1, #random-number2 {
+        background-color: rgb(255, 255, 255);
+        padding: 60px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.unimportant {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    button {
+        margin-top: 20px;
+    }
+
+}
+
+#user-profile-logo {
+    /* color: white; */
+    background-color: rgb(23, 24, 23);
+    border-radius: 50%;
+    /* width: 30px; */
+    padding:10px;
+}
+
+.user-profile-logo {
+    justify-content: center;
+    align-items: center;
+}
+/* #button {
+    margin-top: 20px;
+} */
 /* i {
     background-color: black;
 } */
