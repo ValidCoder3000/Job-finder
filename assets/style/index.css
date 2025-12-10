@@ -59,6 +59,7 @@ a:hover {
     border: 1px solid #ccc;
     min-height: 200px; 
     border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 button { 
@@ -73,13 +74,15 @@ button {
 }
 
 .right-column {
-    flex: 1;              
-    /* background-color: transparent;     */
-    background-color: #ccc; 
+    /* flex: 1;               */
+    background-color: transparent;    
+    /* background-color: #ccc;  */
+    /* background-color: red; */
     /* padding: 20px; */
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     min-height: 200px;  
     border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     /* margin-block-start: 20px;
     margin-block-end: 20px;  */
     /* margin-top: 200px;
@@ -94,7 +97,7 @@ button {
 } */
 
 #header_column {
-    background-color: green;
+    background-color: rgb(255, 255, 255);
     width: auto;
     border-radius: 5px; 
     padding: 20px;
@@ -105,11 +108,34 @@ button {
 }
 
 .content-column {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    background-color: brown;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
     padding: 10px;
+    /* Might add a shadow to the container */
 }
+
+.middle-column {
+    flex: 1;                 
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid #ccc;
+    min-height: 200px; 
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 380px; 
+    height: 60px;
+    font-size: 16px;
+    resize: none;
+}
+
+
 
 /* i {
     background-color: black;
