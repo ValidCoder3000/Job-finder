@@ -1,0 +1,16 @@
+@charset "utf - 8";
+@import "reset.css";
+
+.the_three_column_setup {
+    display: flex;          
+    gap: 20px;               
+}
+
+.column {
+    flex: 1;                 
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    min-height: 200px; 
+    border-radius: 5px;
+}
