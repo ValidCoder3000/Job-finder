@@ -10,13 +10,15 @@
         <link rel="icon" href="./assets/media/favicon.png?v=2" type="image/x-icon">
         <link rel="Stylesheet" href="./assets/style/index.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="./assets/script/app.js" defer></script>
+
 
     </head>
     <body>
         <header>
             <div id="initial_container">
                 <div class="initial_container">
-                    <i class="fa-brands fa-linkedin" style="color: #74C0FC;font-size: 40px;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: blue;font-size: 40px;"></i>
                     <!-- COntainer that holds the search bar, and the navigation links, and the user's profile pic. -->
                     <!-- <span>Space for linkedln logo</span> -->
                     <input type="text" name="query" placeholder="Search..." class="search-bar">
@@ -63,11 +65,13 @@
                     <!-- I advise that you should use your fakebook assignment to do this column JS wise, because my JS was not responsive when i did the assignment -->
                     <div class="text-container">
                         <div id="text-container">
-                            <textarea placeholder="Write here. Add images or a video for visual impact"></textarea>
-                            <br>
-                            <div class="text-buttons">
-                                <button id="button" type="submit">Submit</button>
-                            </div>
+                            <form>
+                                <textarea placeholder="Write here. Add images or a video for visual impact"></textarea>
+                                <br>
+                                <div class="text-buttons">
+                                    <button id="button" type="submit">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
 
@@ -87,7 +91,7 @@
                                Container for the user info
                                 <div id="content-inside">The container that has THE user info</div>
                             </div> -->
-                            <div class="content-column"><div id="content-inside"></div></div>
+                            <div class="content-inside"><div class="content-column"></div></div>
                             <!-- <div class="column">
                                 <span>Insert Random User to make people I may know. May need JS function</span> 
                                 <span></span>
@@ -97,6 +101,8 @@
                 <!-- </div> -->
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <p>Copyright 2025. All Rights Reserved</p>
+        </footer>
     </body>
 </html>

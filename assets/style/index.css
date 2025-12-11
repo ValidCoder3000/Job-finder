@@ -10,6 +10,9 @@ body {
     background-color: #f0f0f0;
 }
 
+main {
+    margin-bottom: 20px;
+}
 .initial_container {
     /* background-color: #f0f0f0; */
     background-color: transparent;
@@ -68,7 +71,15 @@ a:hover {
 
 button { 
     color: white;
-    background-color: blue;}
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: rgb(80, 80, 219);
+}
 
 .search-bar {
     width: 300px;       
@@ -221,6 +232,44 @@ textarea {
 .user-profile-logo {
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    color: white;
+    background-color: blue;
+    height: 100px;
+}
+
+.user-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.content-column img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.user-info p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #555;
 }
 /* #button {
     margin-top: 20px;
