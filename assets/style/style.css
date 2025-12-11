@@ -1,0 +1,391 @@
+@charset "UTF-8";
+@import "reset.css";
+ 
+
+/* -------------------------------------- */
+/* ----------- Header and Nav ----------- */
+/* -------------------------------------- */
+
+header {
+  background-color: #ea6924;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 0 1rem 0 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+#nav_content{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+#logo {
+  height: 75px;
+}
+
+.nav_content_right {
+  justify-content: space-between;
+}
+
+
+.nav_right_icons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+#nav_content_icons {
+  width: 40px;
+}
+
+.search {
+  display: flex;
+  gap: 25px;
+}
+.nav_icon_div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.nav_icon_div p {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+.search_div {
+  border-radius: 5px;
+  height: 35px;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  text-align: justify;
+  /* padding: 10px; */
+}
+
+.user_profile_icon {
+  background-color: white;
+  color: #ea6924;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.search_icon {
+  height: 40px;
+}
+
+.nav_search {
+  height: 35px;
+  width: 200px;
+  text-align: justify;
+  font-size: 15px;
+  border-radius:5px;
+}
+
+.user_profile p {
+  color: white;
+}
+
+/* -------------------------------------- */
+/* ------------ Main Body --------------- */
+/* -------------------------------------- */
+
+body {
+  background-color: #f0f0f0;
+}
+
+main {
+  margin: 3rem 1rem 0 1rem;
+  display: flex;
+}
+
+.profile_section {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+#profile_picture {
+  background-color: #ea6924;
+  width: 125px;
+  border-radius: 50%;
+}
+
+#profile_job {
+  color: rgb(181, 181, 181);
+  font-size: 14px;
+}
+#profile_link {
+  color: rgb(181, 181, 181);
+  font-size: 12px;
+}
+
+.post_section {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+}
+
+.input-field {
+  width: 700px;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-textarea {
+  width: 100%;
+}
+
+.input-field textarea{
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding: 1rem;
+  resize: none;
+  color: black;
+  border: none;
+}
+
+.input-buttons {
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+  width: 100%;
+  
+  margin-top: auto;
+}
+#post {
+  width: 65px;
+  height: 35px;
+  color: white;
+  background-color: #ea6924;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+#post:hover {
+  width: 70px;
+  background-color: #f45e0d;
+}
+
+#media-icon {
+  width: 50px;
+  height: 50px;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+#media-icon:hover {
+  transform: scale(1.10);
+}
+
+.media-input-detail {
+  display: flex;
+  align-items: cen;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-body {
+  display: block;
+}
+
+.info-body p {
+  margin-bottom: 1rem;
+}
+
+#user-info-icon {
+  width: 40px;
+  height: 40px;
+}
+#cancel-dropdown {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background:none;
+  color: white;
+  transition: ease-in-out 0.5s;
+}
+
+#cancel-dropdown:hover {
+  transform: scale(1.05);
+}
+
+.post-container {
+  background-color: #F4F4F6;
+  width: 700px;
+  padding: 1rem;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header-info {
+  display: flex;
+  align-items: center;
+}
+
+.post-image {
+  border-radius: 5px;
+}
+.post-text {
+  font-size: 15px;
+  margin: 5px 0 1rem 0;
+}
+
+.people_section {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.people_top h1 {
+  font-size: 17px;
+}
+
+.right-column {
+    background-color: transparent;    
+    min-height: 200px;  
+    border-radius: 5px;
+
+}
+.content-column {
+    padding: 10px;   
+}
+
+.content-column img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#user-info-details {
+  color:#ccc;
+}
+
+
+
+/* -------------------------------------- */
+/* ---------- Media Queries ------------- */
+/* -------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .nav_search {
+    width: 130px;
+  }
+  .nav_right_icons {
+    gap: 35px;
+  }
+  .nav_content_left {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  /* #logo {
+    width: 60px;
+  } */
+  .search {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav_search {
+    width: 100px;
+  }
+  .nav_right_icons {
+    gap: 25px;
+  }
+  /* #logo {
+    width: 60px;
+  } */
+}
+
+@media only screen and (max-width: 350px) {
+  .nav_search {
+    width: 80px;
+  }
+  .nav_right_icons {
+    gap: 20px;
+  }
+  /* #logo {
+    width: 60px;
+  } */
+}
+
+.random-numbers {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-bottom: 2px;
+    /* justify-content: space-around; */
+    #random-number1, #random-number2 {
+        background-color: rgb(255, 255, 255);
+        padding: 60px;
+        text-align: center;
+        width: 100%;
+    }
+}
+ 
+ 

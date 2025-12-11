@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="">
+        <meta name="description" content="Images in HTML">
+        <meta name="keywords" content="html, css, web, web development, javascript">
+        <title>Jobsy</title>
+        <link rel="icon" href="./assets/media/logo_icon.png" type="image/x-icon">
+        <link rel="Stylesheet" href="./assets/style/style.css" media="all">
+        <script src="./assets/script/app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+          <nav>
+            <div class="nav_content_left" id="nav_content">
+              <img src="./assets/media/jobsy_white.png" id="logo">
+              <div class="search">
+                <div class="search_div">
+                <img src="./assets/media/job_search_icon.png" class="search_icon">
+                <input type="text" id="job_search" class="nav_search" placeholder="Companies">
+              </div>
+              <div class="search_div">
+                <img src="./assets/media/location_search_icon.png" class="search_icon">
+                <input type="text" id="location_search" class="nav_search" placeholder="Location">
+              </div>
+              </div>
+            </div>
+
+            <div class="nav_content_right" id="nav_content">
+              <div class="nav_right_icons">
+                <div class="nav_icon_div">
+                  <img src="./assets/media/connections_icon.png" id="nav_content_icons">
+                  <p>Connections</p>
+                </div>
+                <div class="nav_icon_div">
+                  <img src="./assets/media/bookmark_icon.png" id="nav_content_icons">
+                  <p>My Jobs</p>
+                </div>
+                <div class="nav_icon_div">
+                  <img src="./assets/media/inbox_icon.png" id="nav_content_icons">
+                  <p>Inbox</p>
+                </div>
+                <div class="nav_icon_div">
+                  <img src="./assets/media/messages_icon.png" id="nav_content_icons">
+                  <p>Messages</p>
+                </div>
+
+                <div class="user_profile">
+                  <h1 class="user_profile_icon">K</h1>
+                  <p>Me   &#8595;</p>
+                </div>
+
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>
+
+          <section class="profile_section">
+            <div class="profile_head">
+              <img src="./assets/media/location_search_icon.png" id="profile_picture" alt="Profile Picture">
+              <h3 id="profile_name">John Doe</h3>
+              <p id="profile_job">Software Developer</p>
+              <p id="profile_link">linktree.com</p>
+            </div>
+          
+            <div class="profile_body">
+            </div>
+          </section>
+
+          <section class="post_section">
+            <div class="container">
+              <div class="input-field">
+                <div class="input-textarea"><textarea placeholder="What's new?">
+                  </textarea>
+                </div>
+                <div id="preview">
+                </div>
+                <div class="input-buttons">
+                  <div class="media-input-detail">
+                    <input type="file" id="fileInput" style="display:none">
+                    <label for="fileInput">
+                      <img src="./assets/media/media_icon.png" alt="Upload" id="media-icon">
+                    </label>
+                    <span id="fileName" style="color:white; margin-left:10px;"></span>
+                  </div>
+                  <input type="button" value="Post" id="post" disabled>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="people_section">
+            <div class="people_top">
+              <h1>People you may know</h1>
+              <hr>
+            </div>
+            <div class="people_body">
+              <div class="content-inside"><div class="content-column"></div></div>
+            </div>
+          </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
+ 
