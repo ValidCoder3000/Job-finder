@@ -97,7 +97,7 @@ button:hover {
     /* border: 1px solid #ccc; */
     min-height: 200px;  
     border-radius: 5px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
     /* margin-block-start: 20px;
     margin-block-end: 20px;  */
     /* margin-top: 200px;
@@ -127,7 +127,14 @@ button:hover {
     margin-bottom: 5px;
     background-color: #fff;
     padding: 10px;
+    border-radius: 5px;
     /* Might add a shadow to the container */
+}
+
+.content-column img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
 }
 
 .middle-column {
@@ -138,7 +145,7 @@ button:hover {
     /* border: 1px solid #ccc; */
     min-height: 200px; 
     border-radius: 5px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
 }
 
 textarea {
@@ -158,6 +165,9 @@ textarea {
 }
 
 .text-buttons {
+    display: flex;                
+    justify-content: space-between; 
+    align-items: center;           
     background-color: rgb(255, 255, 255);
     padding: 10px;
 }
@@ -182,17 +192,34 @@ textarea {
     border: 1px solid #ccc;
     min-height: 200px; 
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
 }
 
 .profile-info {
     padding: 20px;
     text-align: center;
     margin-bottom: 2px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
 
-    img {
+    /* img {
+
         border-radius: 50%;
-    }
+    } */
+}
+
+.profile-info img {
+    display: block;        
+    margin: 0 auto;        
+    border-radius: 50%;    
+}
+
+.pen-icon {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 20px;
+    background-color: white;
 }
 
 .random-numbers {
@@ -240,7 +267,7 @@ footer {
     height: 100px;
 }
 
-.user-card {
+/* .user-card {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
@@ -248,15 +275,11 @@ footer {
     display: flex;
     align-items: center;
     gap: 15px;
-}
+} */
 
-.content-column img {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-}
 
-.user-info {
+
+/* .user-info {
     display: flex;
     flex-direction: column;
 }
@@ -270,7 +293,7 @@ footer {
     margin: 2px 0;
     font-size: 14px;
     color: #555;
-}
+} */
 /* #button {
     margin-top: 20px;
 } */
