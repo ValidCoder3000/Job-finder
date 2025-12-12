@@ -76,26 +76,83 @@ function generateRandomNumbers() {
     document.querySelector("#random-number2 h3").textContent = views;
 }
 
+let changeDetails = document.getElementById("change_profile_details");
 
-if (!localStorage.getItem("userProfile")) {
-    const defaultUser = {
-        email: "johndoe@email.com",
-        password: "john123doe"
-    };
-    localStorage.setItem("userProfile", JSON.stringify(defaultUser));
-}
+document.getElementById("change_profile_details").addEventListener("click", function() {
+    const changeDetails = document.getElementById("change_profile_details");
 
-document.getElementById("login").addEventListener("click", function() {
-    const loginEmail = document.getElementById("email").value;
-    const loginPassword = document.getElementById("password").value;
+    if (changeDetails.value === "Change Profile Details") {
+        changeDetails.value = "Confirm";
+        document.querySelectorAll(".edit_button").forEach(btn => {
+            btn.classList.remove("hidden");
+        });
+    } else if (changeDetails.value === "Confirm") {
+        changeDetails.value = "Change Profile Details";
+        document.getElementById("name_div").classList.remove("hidden");
+        document.getElementById("profession_div").classList.remove("hidden");
+        document.getElementById("bio_div").classList.remove("hidden");
+        document.querySelectorAll(".edit_button").forEach(btn => {
+            btn.classList.add("hidden");
 
-    const storedUser = JSON.parse(localStorage.getItem("userProfile"));
-
-    if (storedUser &&
-        storedUser.email === loginEmail &&
-        storedUser.password === loginPassword) {
-        window.location.href = "../../index.html";
-    } else {
-        alert("Invalid email or password");
+            document.querySelectorAll(".change_info_div").forEach(div => {
+                div.classList.add("hidden");
+            })
+        });
     }
+});
+
+document.getElementById("name_edit").addEventListener("click", function() {
+    document.getElementById("name_div").classList.add("hidden");
+    document.getElementById("change_name").classList.remove("hidden")
+})
+document.getElementById("profession_edit").addEventListener("click", function() {
+    document.getElementById("profession_div").classList.add("hidden");
+    document.getElementById("change_profession").classList.remove("hidden")
+})
+
+document.getElementById("bio_edit").addEventListener("click", function() {
+    document.getElementById("bio_div").classList.add("hidden");
+    document.getElementById("change_bio").classList.remove("hidden")
+})
+
+document.getElementById("name_confirm").addEventListener("click", function() {
+    if (document.getElementById("name_change").value !== "") {
+        document.getElementById("profile_name").innerHTML = document.getElementById("name_change").value
+    }
+    document.getElementById("name_div").classList.remove("hidden");
+    document.getElementById("change_name").classList.add("hidden")
+})
+
+document.getElementById("profession_confirm").addEventListener("click", function() {
+    if (document.getElementById("profession_change").value !== "") {
+        document.getElementById("profile_profession").innerHTML = document.getElementById("profession_change").value
+    }
+    document.getElementById("profession_div").classList.remove("hidden");
+    document.getElementById("change_profession").classList.add("hidden")
+})
+
+document.getElementById("bio_confirm").addEventListener("click", function() {
+    if (document.getElementById("bio_change").value !== "") {
+        document.getElementById("profile_bio").innerHTML = document.getElementById("bio_change").value
+    }
+    document.getElementById("bio_div").classList.remove("hidden");
+    document.getElementById("change_bio").classList.add("hidden")
+})
+
+window.addEventListener("DOMContentLoaded", () => {
+  const fileInput = document.getElementById("fileInput");
+  const profilePic = document.getElementById("profile_picture");
+  const changePicBtn = document.getElementById("change_profile_picture");
+
+  changePicBtn.addEventListener("click", () => {
+    fileInput.click();
+  });
+
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+    if (file) {
+      const imgURL = (window.URL || window.webkitURL).createObjectURL(file);
+      profilePic.src = imgURL;
+    }
+  });
 });
