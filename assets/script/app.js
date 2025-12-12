@@ -1,6 +1,7 @@
 'use strict';
 
-const URL = "https://randomuser.me/api/?nat=CA&results=10&seed=same";
+const URL = `https://randomuser.me/api/?nat=CA&results=10&seed=${Date.now()}`;
+
 
 const options = {
     method: 'GET',
@@ -163,5 +164,4 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
 
