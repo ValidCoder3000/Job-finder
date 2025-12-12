@@ -8,6 +8,8 @@ const options = {
     mode: 'cors'
 };
 
+// Get random users with randomuserapi
+
 window.addEventListener("DOMContentLoaded", () => {
     loadRightColumnUsers();
     loadLeftColumnProfile();
@@ -67,6 +69,8 @@ async function loadLeftColumnProfile() {
     }
 }
 
+// Get random numbers for Connections and Views
+
 
 function generateRandomNumbers() {
     const connections = Math.floor(Math.random() * 900) + 100; 
@@ -75,6 +79,9 @@ function generateRandomNumbers() {
     document.querySelector("#random-number1 h3").textContent = connections;
     document.querySelector("#random-number2 h3").textContent = views;
 }
+
+
+// Functions to edit user profile details
 
 let changeDetails = document.getElementById("change_profile_details");
 
@@ -158,4 +165,3 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.getElementById
