@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="">
+        <meta name="description" content="Images in HTML">
+        <meta name="keywords" content="html, css, web, web development, javascript">
+        <title>Jobsy - Home</title>
+        <link rel="icon" href="./assets/media/logo_icon.png" type="image/x-icon">
+        <link rel="Stylesheet" href="../style/style.css" media="all">
+        <script src="../script/app.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+      <!-- Navbar -->
+        <header>
+          <nav>
+            <div class="nav_content_left" id="nav_content">
+              <img src="../media/jobsy_white.png" id="logo">
+              <div class="search">
+                <div class="search_div">
+                <img src="../media/job_search_icon.png" class="search_icon">
+                <input type="text" id="job_search" class="nav_search" placeholder="Companies">
+              </div>
+              <div class="search_div">
+                <img src="../media/location_search_icon.png" class="search_icon">
+                <input type="text" id="location_search" class="nav_search" placeholder="Location">
+              </div>
+              </div>
+            </div>
+
+            <div class="nav_content_right" id="nav_content">
+              <div class="nav_right_icons">
+                <div class="nav_icon_div">
+                  <img src="../media/connections_icon.png" id="nav_content_icons">
+                  <p>Connections</p>
+                </div>
+                <div class="nav_icon_div">
+                  <img src="../media/saved_icon.png" id="nav_content_icons">
+                  <p>My Jobs</p>
+                </div>
+                <div class="nav_icon_div">
+                  <img src="../media/inbox_icon.png" id="nav_content_icons">
+                  <p>Inbox</p>
+                </div>
+                <div class="nav_icon_div">
+                  <img src="../media/message_icon.png" id="nav_content_icons">
+                  <p>Messages</p>
+                </div>
+
+                <div class="user_profile">
+                  <h1 class="user_profile_icon">J</h1>
+                  <p>Me   &#8595;</p>
+                </div>
+
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <!-- Section displays users profile  -->
+          <section class="profile_section">
+            <div class="profile_head">
+              <img src="../media/profile_pic.png" id="profile_picture" alt="Profile Picture">
+              <div class="profile_info" id="name_div">
+                <h3 id="profile_name">John Doe</h3>
+                <input type="button" value="&times;" class="edit_button hidden" id="name_edit">
+              </div>
+              <div class="change_info_div hidden" id="change_name">
+                <input type="text" placeholder="Enter Name" class="text_change" id="name_change">
+                <input type="button" value="✔" class="confirm_btn" id="name_confirm">
+              </div>
+              <div class="profile_info" id="profession_div">
+                <p id="profile_profession">Software Developer</p>
+                <input type="button" value="&times;" class="edit_button hidden" id="profession_edit">
+              </div>
+              <div class="change_info_div hidden" id="change_profession">
+                <input type="text" placeholder="Enter Profession" class="text_change" id="profession_change">
+                <input type="button" value="✔" class="confirm_btn" id="profession_confirm">
+              </div>
+              <div class="profile_info" id="bio_div">
+                <p id="profile_bio">linktree.com</p> 
+                <input type="button" value="&times;" class="edit_button hidden" id="bio_edit">
+              </div>
+              <div class="change_info_div hidden" id="change_bio">
+                <input type="text" placeholder="Enter Bio" class="text_change" id="bio_change">
+                <input type="button" value="✔" class="confirm_btn" id="bio_confirm">
+              </div>
+            </div>
+            <div class="profile_body">
+              <hr>
+              <div class="user_stats_div">
+                <div id="random-number1"><h3></h3><p>Connections</p></div>
+                <div id="random-number2"><h3></h3><p>Views</p></div>
+              </div>
+              <hr>
+              <div class="customize_div">
+                <h1>Customize your profile</h1>
+                <input type="button" id="change_profile_details" class="customize_info" value="Change Profile Details">
+                <input type="button" id="change_profile_picture" class="customize_info" value="Change Profile Picture">
+                <input type="file" id="fileInput" accept="image/*" style="display:none">
+              </div>
+                
+            </div>
+          </section>
+
+
+          <!-- Section displays post input field and other users posts -->
+          <section class="post_section">
+            <div class="container">
+              <div class="input-field">
+                <div class="input-textarea"><textarea placeholder="What's new?"></textarea>
+                </div>
+                <div class="input-buttons">
+                  <div class="media-input">
+                    <p class="media-input-types">Article</p>
+                    <p class="media-input-types">Image</p>
+                    <p class="media-input-types">Video</p>
+                  </div>
+                  <input type="button" value="Post" id="post" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="post_div">
+              <div class="post_head">
+                <img src="../media/post_user_one.img" class="user_post_icon">
+                Sean Parker
+              </div><hr>
+              <div class="post_body">
+                <p>Sharing a glimpse of my latest scenery shot, always ready to bring this level of detail to your projects.</p>
+                <img src="../media/post_img.jpg" class="post_img">
+              </div>
+            </div>
+            <div class="post_div">
+              <div class="post_head">
+                <img src="../media/post_user_two.img" class="user_post_icon">
+                Kaylyn MacDonald
+              </div><hr>
+              <div class="post_body">
+                <p>Excited to bring my skills in project management and problem solving to a team that values growth and innovation.<br><br>I am eager to contribute my skills in project management, communication, and problem solving to a forward‑thinking organization where I can grow professionally, add value to the team, and help deliver meaningful results.</p>
+                <img src="" class="post_img">
+              </div>
+            </div>
+          </section>
+
+
+          <!-- Section displays connections and people you may know using the Random User Api -->
+          <section class="people_section">
+            <div class="people_top">
+              <h1>People you may know</h1>
+              <hr>
+            </div>
+            <div class="people_body">
+              <div class="content-inside"><div class="content-column"></div></div>
+            </div>
+          </section>
+        </main>
+        <footer>
+<div class="footer_container">
+    <div class="footer_left">
+      <img src="../media/logo_white.png" alt="Jobsy Logo" class="footer_logo">
+      <p>&copy; 2025 Jobsy. All rights reserved.</p>
+    </div>
+
+    <div class="footer_links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_social">
+      <h4>Connect</h4>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+        </footer>
+    </body>
+</html>
+ 
