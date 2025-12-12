@@ -17,7 +17,7 @@ document.getElementById("login").addEventListener("click", function() {
     if (storedUser &&
         storedUser.email === loginEmail &&
         storedUser.password === loginPassword) {
-        window.location.href = "../assets/pages/home.html";
+        window.location.href = "./assets/pages/home.html";
     } else {
         alert("Invalid email or password");
     }
