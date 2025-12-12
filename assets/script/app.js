@@ -109,6 +109,8 @@ document.getElementById("change_profile_details").addEventListener("click", func
     }
 });
 
+// Individual changes to the users inputs
+
 document.getElementById("name_edit").addEventListener("click", function() {
     document.getElementById("name_div").classList.add("hidden");
     document.getElementById("change_name").classList.remove("hidden")
@@ -146,6 +148,8 @@ document.getElementById("bio_confirm").addEventListener("click", function() {
     document.getElementById("bio_div").classList.remove("hidden");
     document.getElementById("change_bio").classList.add("hidden")
 })
+
+// Manual change to profile picture
 
 window.addEventListener("DOMContentLoaded", () => {
   const fileInput = document.getElementById("fileInput");

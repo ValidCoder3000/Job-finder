@@ -198,6 +198,10 @@ main {
   display: none;
 }
 
+/* -------------------------------------- */
+/* ---------- Post Div ------------------ */
+/* -------------------------------------- */
+
 .post_section {
   display: block;
   justify-content: center;
@@ -385,6 +389,70 @@ main {
   color:#ccc;
 }
 
+/* -------------------------------------- */
+/* ---------- Footer Edits -------------- */
+/* -------------------------------------- */
+
+
+footer {
+  background-color: #ea6924;
+  color: white;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer_left {
+  max-width: 250px;
+}
+
+.footer_logo {
+  width: 40px;
+  margin-bottom: 1rem;
+}
+
+.footer_links h4,
+.footer_social h4 {
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}
+
+.footer_links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_links li {
+  margin: 5px 0;
+}
+
+.footer_links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer_links a:hover {
+  color: #f0f0f0;
+}
+
+.footer_social a {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer_social a:hover {
+  transform: scale(1.2);
+}
+
 
 
 /* -------------------------------------- */
@@ -539,6 +607,8 @@ main {
     width: 150px;
   }
 }
+
+
 
 
 .random-numbers {
